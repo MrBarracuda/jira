@@ -1,25 +1,20 @@
-# next-forge
+# Jira Clone
 
 **Production-grade Turborepo template for Next.js apps.**
 
-<div>
-  <img src="https://img.shields.io/npm/dy/next-forge" alt="" />
-  <img src="https://img.shields.io/npm/v/next-forge" alt="" />
-  <img src="https://img.shields.io/github/license/haydenbleasel/next-forge" alt="" />
-</div>
+TODO: 
 
-[next-forge](https://github.com/haydenbleasel/next-forge) is a [Next.js](https://nextjs.org/) project boilerplate for modern web application. It is designed to be a comprehensive starting point for new apps, providing a solid, opinionated foundation with a minimal amount of configuration.
-
-Clone the repo using:
-
-```sh
-npx next-forge@latest init
-```
-
-Then read the [docs](https://docs.next-forge.com) for more information.
-
-<a href="https://github.com/haydenbleasel/next-forge/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=haydenbleasel/next-forge" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
+- [ ] add @tanstack/react-query
+– [ ] add motion 
+– [ ] add @tanstack/react-table
+– [ ] add tRPC 
+– [ ] migrate from clerk to better-auth
+– [ ] migrate from react-hook-form to @tanstack/react-form 
+– [ ] research the need of ts-reset 
+– [ ] research the need of zustand or jotai 
+– [ ] research the need of next-safe-action
+– [ ] decide if apps/docs is needed
+– [ ] remove redundant packages/*
+– [ ] improve stripe integration by utilizing a KV store (upstash) https://github.com/t3dotgg/stripe-recommendations
+- [ ] invistiage https://www.npmjs.com/package/tw-animate-css a replacement for tailwindcss-animate
+- [ ] 
