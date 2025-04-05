@@ -3,7 +3,7 @@
 **Production-grade Turborepo template for Next.js apps.**
 
 TODO: 
-
+```
 - [ ] add @tanstack/react-query
 – [ ] add motion 
 – [ ] add @tanstack/react-table
@@ -17,4 +17,4 @@ TODO:
 – [ ] remove redundant packages/*
 – [ ] improve stripe integration by utilizing a KV store (upstash) https://github.com/t3dotgg/stripe-recommendations
 - [ ] invistiage https://www.npmjs.com/package/tw-animate-css a replacement for tailwindcss-animate
-- [ ] 
+```
