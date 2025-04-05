@@ -19,16 +19,11 @@ const getName = (user: OrganizationMembership): string | undefined => {
   return name;
 };
 
+type SearchUsersResponse = { data: string[] } | { error: unknown };
+
 export const searchUsers = async (
   query: string
-): Promise<
-  | {
-      data: string[];
-    }
-  | {
-      error: unknown;
-    }
-> => {
+): Promise<SearchUsersResponse> => {
   try {
     const { orgId } = await auth();
 
