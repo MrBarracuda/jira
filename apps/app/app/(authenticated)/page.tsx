@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   description,
 };
 
-const App = async () => {
+export default async function App() {
   const pages = await database.page.findMany();
   const { orgId } = await auth();
 
@@ -52,6 +52,4 @@ const App = async () => {
       </div>
     </>
   );
-};
-
-export default App;
+}
