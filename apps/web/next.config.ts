@@ -6,10 +6,10 @@ import type { NextConfig } from 'next';
 
 let nextConfig: NextConfig = withToolbar(withLogging(config));
 
-nextConfig.images?.remotePatterns?.push({
-  protocol: 'https',
-  hostname: 'assets.basehub.com',
-});
+// nextConfig.images?.remotePatterns?.push({
+//   protocol: 'https',
+//   hostname: 'assets.basehub.com',
+// });
 
 if (process.env.NODE_ENV === 'production') {
   const redirects: NextConfig['redirects'] = async () => [

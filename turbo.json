@@ -9,7 +9,6 @@
       "outputs": [
         ".next/**",
         "!.next/cache/**",
-        ".basehub/**",
         "**/generated/**",
         ".react-email/**"
       ]
