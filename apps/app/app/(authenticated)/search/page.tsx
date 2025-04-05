@@ -21,7 +21,9 @@ export const generateMetadata = async ({
   };
 };
 
-const SearchPage = async ({ searchParams }: SearchPageProperties) => {
+export default async function SearchPage({
+  searchParams,
+}: SearchPageProperties) {
   const { q } = await searchParams;
 
   const pages = await database
@@ -54,6 +56,4 @@ const SearchPage = async ({ searchParams }: SearchPageProperties) => {
       </div>
     </>
   );
-};
-
-export default SearchPage;
+}
