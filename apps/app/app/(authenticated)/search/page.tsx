@@ -1,5 +1,6 @@
 import { auth } from '@repo/auth/server';
-import { database } from '@repo/database';
+import { database, like } from '@repo/database';
+import { page } from '@repo/database/schema';
 import { notFound, redirect } from 'next/navigation';
 import { Header } from '../components/header';
 
@@ -22,13 +23,12 @@ export const generateMetadata = async ({
 
 const SearchPage = async ({ searchParams }: SearchPageProperties) => {
   const { q } = await searchParams;
-  const pages = await database.page.findMany({
-    where: {
-      name: {
-        contains: q,
-      },
-    },
-  });
+
+  const pages = await database
+    .select()
+    .from(page)
+    .where(like(page.name, `%${q}%`));
+
   const { orgId } = await auth();
 
   if (!orgId) {
