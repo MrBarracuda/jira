@@ -145,9 +145,6 @@ importers:
       '@repo/observability':
         specifier: workspace:*
         version: link:../../packages/observability
-      '@repo/security':
-        specifier: workspace:*
-        version: link:../../packages/security
       '@repo/seo':
         specifier: workspace:*
         version: link:../../packages/seo
@@ -227,9 +224,6 @@ importers:
 
   apps/web:
     dependencies:
-      '@arcjet/next':
-        specifier: 1.0.0-beta.5
-        version: 1.0.0-beta.5(next@15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       '@radix-ui/react-icons':
         specifier: ^1.3.2
         version: 1.3.2(react@19.1.0)
@@ -254,9 +248,6 @@ importers:
       '@repo/rate-limit':
         specifier: workspace:*
         version: link:../../packages/rate-limit
-      '@repo/security':
-        specifier: workspace:*
-        version: link:../../packages/security
       '@repo/seo':
         specifier: workspace:*
         version: link:../../packages/seo
@@ -935,28 +926,6 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
-  packages/security:
-    dependencies:
-      '@arcjet/next':
-        specifier: 1.0.0-beta.5
-        version: 1.0.0-beta.5(next@15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
-      '@nosecone/next':
-        specifier: 1.0.0-beta.5
-        version: 1.0.0-beta.5(next@15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
-      '@t3-oss/env-nextjs':
-        specifier: ^0.12.0
-        version: 0.12.0(typescript@5.8.3)(zod@3.24.2)
-      zod:
-        specifier: ^3.24.2
-        version: 3.24.2
-    devDependencies:
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
-      typescript:
-        specifier: ^5.8.3
-        version: 5.8.3
-
   packages/seo:
     dependencies:
       lodash.merge:
@@ -1081,56 +1050,6 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
-
-  '@arcjet/analyze-wasm@1.0.0-beta.5':
-    resolution: {integrity: sha512-OqZMV7+AVAg/74i9vSy5nRYHxd2SOBhMxXOoalrbYYRIWySlAlhyhqW8ZJvC/2Uw8KyvW8ouUUiAEWTNrzgqVg==}
-    engines: {node: '>=18'}
-
-  '@arcjet/analyze@1.0.0-beta.5':
-    resolution: {integrity: sha512-o+E+TIA7xWtQ8GdHSXiK0HYg7+axw3o9y2am0i/w9SLi9JUI8WO70YU1nAKkfQEbdYZxOiPHBNmxsJMuywLzrw==}
-    engines: {node: '>=18'}
-
-  '@arcjet/duration@1.0.0-beta.5':
-    resolution: {integrity: sha512-Z00u1FqsgvTPtXHSyQogNsRq1Vf+6jPSznCIO7x9pXE/Z4rjGJfcoISFQ5thHs+QAOyEGDjc4IJW+vP0W/kUHg==}
-    engines: {node: '>=18'}
-
-  '@arcjet/env@1.0.0-beta.5':
-    resolution: {integrity: sha512-QdIR//hxS8GtDZRd+BQxphwofTfGNn5nBP1lKC8U5uokYgiS4nwgrN/PADFAXMDMbJ6WtE2NzkWf/aS7K61heA==}
-    engines: {node: '>=18'}
-
-  '@arcjet/headers@1.0.0-beta.5':
-    resolution: {integrity: sha512-oNOzYFTybmDbSn8u1e3yWRhLPRwkyV1+7ETkBLpUVF1nKu6UoQ0A6Eef/a3GRFXtPCk1QbNCnYdewThR3bOn/g==}
-    engines: {node: '>=18'}
-
-  '@arcjet/ip@1.0.0-beta.5':
-    resolution: {integrity: sha512-b9yWlleOzAucWv8L9LAVhM8g/G80dYhhDa0qymbCAlZa0t3n2+ESWZaGjxdoIX0i83udUqjizUfNUeEejjRPXQ==}
-    engines: {node: '>=18'}
-
-  '@arcjet/logger@1.0.0-beta.5':
-    resolution: {integrity: sha512-U0zpHoFD/sKbhlFTlqidm5vT0u8JNXp2QNViaPm5C3/aPF/OVzziz8/Kn3fG9dcYCxDm3B1tqGsVqXm+XECP9w==}
-    engines: {node: '>=18'}
-
-  '@arcjet/next@1.0.0-beta.5':
-    resolution: {integrity: sha512-0UR/PhQqIpTF6Zc2Xx0MNyVBZqazerqz3ZN6xaZsmyz3HA/vQLqTI/TZB2aA99KhXHD5iNaLa7HdUSOPu5liug==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      next: '>=13'
-
-  '@arcjet/protocol@1.0.0-beta.5':
-    resolution: {integrity: sha512-anuG2y2tjarugfKh4svwsRFLgobXWkAVKyH4+zMq13RrBu+6wILHx11QgTeexQhKf8KVXPqj5HKDAC9BSqQxjw==}
-    engines: {node: '>=18'}
-
-  '@arcjet/runtime@1.0.0-beta.5':
-    resolution: {integrity: sha512-Kspn1VpfgUBEZDEs2j1Nf0omAyNBuvBdrnN2cK4oimGGrk6yBO0+elq+4rq58MCvOJ6gGpK+wFJ3XAf25pD41A==}
-    engines: {node: '>=18'}
-
-  '@arcjet/sprintf@1.0.0-beta.5':
-    resolution: {integrity: sha512-v8RWmdMXSwPHCn7jd4ix2UalsHWpPXq6fg0cW9pehjRoG8MsHR3DlRgu6uR2FQuIc63rvFQqsSC7MKWWFuycaQ==}
-    engines: {node: '>=18'}
-
-  '@arcjet/transport@1.0.0-beta.5':
-    resolution: {integrity: sha512-Qz+jIiUboOy+QlHSCQQSo7BfDW2ggDPM8W9rlIf4b1Xj4DvvxybpIkOgVrO7vwL2QvZfBaRASGyrRxd27H6ipg==}
-    engines: {node: '>=18'}
 
   '@asamuzakjp/css-color@2.8.3':
     resolution: {integrity: sha512-GIc76d9UI1hCvOATjZPyHFmE5qhRccp3/zGfMPapK3jBi+yocEzp6BBB0UnfRYP9NP4FANqUZYb0hnfs3TM3hw==}
@@ -1295,9 +1214,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@bufbuild/protobuf@1.10.0':
-    resolution: {integrity: sha512-QDdVFLoN93Zjg36NoQPZfsVH9tZew7wKDKyV5qRdj8ntT4wQCOradQjRaTdwMhWUYsgKsvCINKKm87FdEk96Ag==}
-
   '@cfcs/core@0.0.6':
     resolution: {integrity: sha512-FxfJMwoLB8MEMConeXUCqtMGqxdtePQxRBOiGip9ULcYYam3WfCgoY6xdnMaSkYvRvmosp5iuG+TiPofm65+Pw==}
 
@@ -1353,24 +1269,6 @@ packages:
   '@clerk/types@4.50.2':
     resolution: {integrity: sha512-4m1RlV/Dl3ZGW5FAXmKfdCbhF7uTDDvaADZH1F6L3d3lRBdI6i7GppK1KqscOSgoC8OwJqGaiDVUPsg+Pp8usg==}
     engines: {node: '>=18.17.0'}
-
-  '@connectrpc/connect-node@1.6.1':
-    resolution: {integrity: sha512-DxcD1wsF/aX9GegjAtl7VbpiZNjVJozy87VbaFoN6AF0Ln1Q757r5dgV59Gz0wmlk5f17txUsrEr1f2inlnnAg==}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      '@bufbuild/protobuf': ^1.10.0
-      '@connectrpc/connect': 1.6.1
-
-  '@connectrpc/connect-web@1.6.1':
-    resolution: {integrity: sha512-GVfxQOmt3TtgTaKeXLS/EA2IHa3nHxwe2BCHT7X0Q/0hohM+nP5DDnIItGEjGrGdt3LTTqWqE4s70N4h+qIMlQ==}
-    peerDependencies:
-      '@bufbuild/protobuf': ^1.10.0
-      '@connectrpc/connect': 1.6.1
-
-  '@connectrpc/connect@1.6.1':
-    resolution: {integrity: sha512-KchMDNtU4CDTdkyf0qG7ugJ6qHTOR/aI7XebYn3OTCNagaDYWiZUVKgRgwH79yeMkpNgvEUaXSK7wKjaBK9b/Q==}
-    peerDependencies:
-      '@bufbuild/protobuf': ^1.10.0
 
   '@cspotcode/source-map-support@0.8.1':
     resolution: {integrity: sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==}
@@ -2471,12 +2369,6 @@ packages:
   '@nodelib/fs.walk@1.2.8':
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
-
-  '@nosecone/next@1.0.0-beta.5':
-    resolution: {integrity: sha512-VJL31SlT+1nK5RqUcoYNFBxSuQxU4pvPab5G4oyxocc+LL/rtiTDQnhdk9W6vbV047okMerfxJ/6Ct0pDAqwvg==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      next: '>=14'
 
   '@octokit/auth-token@2.5.0':
     resolution: {integrity: sha512-r5FVUJCOLl19AxiuZD2VRZ/ORjp/4IN98Of6YJoJOkY75CIBuYfmiNHGrDwXr+aLGG55igl9QrxX3hbiXlLb+g==}
@@ -4778,10 +4670,6 @@ packages:
   anymatch@3.1.3:
     resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
     engines: {node: '>= 8'}
-
-  arcjet@1.0.0-beta.5:
-    resolution: {integrity: sha512-P73qMpgBNdDhDzLAt6aDAg+wxO7MntbY1BioKYDRnlJce4e3uFmGlhyi+GbOm7A7GQFMC14wKkKXb/JJ7QTvsA==}
-    engines: {node: '>=18'}
 
   arg@4.1.3:
     resolution: {integrity: sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==}
@@ -7164,10 +7052,6 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  nosecone@1.0.0-beta.5:
-    resolution: {integrity: sha512-qqrdBNdRxQO2VzyEfx9ggJlJsWuktcaYmNk+EK3VtlHNOTprK97eHVtOYJTbup+IIX5C0wtPGoltjX9ZPMTtiA==}
-    engines: {node: '>=18'}
-
   npm-run-path@4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
     engines: {node: '>=8'}
@@ -8553,9 +8437,6 @@ packages:
     resolution: {integrity: sha512-3KS2b+kL7fsuk/eJZ7EQdnEmQoaho/r6KUef7hxvltNA5DR8NAUM+8wJMbJyZ4G9/7i3v5zPBIMN5aybAh2/Jg==}
     engines: {node: '>= 0.4'}
 
-  typeid-js@1.2.0:
-    resolution: {integrity: sha512-t76ZucAnvGC60ea/HjVsB0TSoB0cw9yjnfurUgtInXQWUI/VcrlZGpO23KN3iSe8yOGUgb1zr7W7uEzJ3hSljA==}
-
   typescript-memoize@1.1.1:
     resolution: {integrity: sha512-GQ90TcKpIH4XxYTI2F98yEQYZgjNMOGPpOgdjIBhaLaWji5HPWlRnZ4AeA1hfBxtY7bCGDJsqDDHk/KaHOl5bA==}
 
@@ -9043,53 +8924,6 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@arcjet/analyze-wasm@1.0.0-beta.5': {}
-
-  '@arcjet/analyze@1.0.0-beta.5':
-    dependencies:
-      '@arcjet/analyze-wasm': 1.0.0-beta.5
-      '@arcjet/protocol': 1.0.0-beta.5
-
-  '@arcjet/duration@1.0.0-beta.5': {}
-
-  '@arcjet/env@1.0.0-beta.5': {}
-
-  '@arcjet/headers@1.0.0-beta.5': {}
-
-  '@arcjet/ip@1.0.0-beta.5': {}
-
-  '@arcjet/logger@1.0.0-beta.5':
-    dependencies:
-      '@arcjet/sprintf': 1.0.0-beta.5
-
-  '@arcjet/next@1.0.0-beta.5(next@15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
-    dependencies:
-      '@arcjet/env': 1.0.0-beta.5
-      '@arcjet/headers': 1.0.0-beta.5
-      '@arcjet/ip': 1.0.0-beta.5
-      '@arcjet/logger': 1.0.0-beta.5
-      '@arcjet/protocol': 1.0.0-beta.5
-      '@arcjet/transport': 1.0.0-beta.5
-      arcjet: 1.0.0-beta.5
-      next: 15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-
-  '@arcjet/protocol@1.0.0-beta.5':
-    dependencies:
-      '@bufbuild/protobuf': 1.10.0
-      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.0)
-      typeid-js: 1.2.0
-
-  '@arcjet/runtime@1.0.0-beta.5': {}
-
-  '@arcjet/sprintf@1.0.0-beta.5': {}
-
-  '@arcjet/transport@1.0.0-beta.5':
-    dependencies:
-      '@bufbuild/protobuf': 1.10.0
-      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.0)
-      '@connectrpc/connect-node': 1.6.1(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0))
-      '@connectrpc/connect-web': 1.6.1(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0))
-
   '@asamuzakjp/css-color@2.8.3':
     dependencies:
       '@csstools/css-calc': 2.1.2(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)
@@ -9325,8 +9159,6 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@bufbuild/protobuf@1.10.0': {}
-
   '@cfcs/core@0.0.6':
     dependencies:
       '@egjs/component': 3.0.5
@@ -9399,21 +9231,6 @@ snapshots:
   '@clerk/types@4.50.2':
     dependencies:
       csstype: 3.1.3
-
-  '@connectrpc/connect-node@1.6.1(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0))':
-    dependencies:
-      '@bufbuild/protobuf': 1.10.0
-      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.0)
-      undici: 5.28.5
-
-  '@connectrpc/connect-web@1.6.1(@bufbuild/protobuf@1.10.0)(@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0))':
-    dependencies:
-      '@bufbuild/protobuf': 1.10.0
-      '@connectrpc/connect': 1.6.1(@bufbuild/protobuf@1.10.0)
-
-  '@connectrpc/connect@1.6.1(@bufbuild/protobuf@1.10.0)':
-    dependencies:
-      '@bufbuild/protobuf': 1.10.0
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -10225,11 +10042,6 @@ snapshots:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
-
-  '@nosecone/next@1.0.0-beta.5(next@15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))':
-    dependencies:
-      next: 15.2.4(@opentelemetry/api@1.9.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      nosecone: 1.0.0-beta.5
 
   '@octokit/auth-token@2.5.0':
     dependencies:
@@ -12817,14 +12629,6 @@ snapshots:
     dependencies:
       normalize-path: 3.0.0
       picomatch: 2.3.1
-
-  arcjet@1.0.0-beta.5:
-    dependencies:
-      '@arcjet/analyze': 1.0.0-beta.5
-      '@arcjet/duration': 1.0.0-beta.5
-      '@arcjet/headers': 1.0.0-beta.5
-      '@arcjet/protocol': 1.0.0-beta.5
-      '@arcjet/runtime': 1.0.0-beta.5
 
   arg@4.1.3: {}
 
@@ -15611,8 +15415,6 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  nosecone@1.0.0-beta.5: {}
-
   npm-run-path@4.0.1:
     dependencies:
       path-key: 3.1.1
@@ -17272,10 +17074,6 @@ snapshots:
       is-typed-array: 1.1.15
       possible-typed-array-names: 1.1.0
       reflect.getprototypeof: 1.0.10
-
-  typeid-js@1.2.0:
-    dependencies:
-      uuid: 10.0.0
 
   typescript-memoize@1.1.1: {}
 

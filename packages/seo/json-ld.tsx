@@ -7,6 +7,7 @@ type JsonLdProps = {
 export const JsonLd = ({ code }: JsonLdProps) => (
   <script
     type="application/ld+json"
+    // TODO: remove it 
     // biome-ignore lint/security/noDangerouslySetInnerHtml: "This is a JSON-LD script, not user-generated content."
     dangerouslySetInnerHTML={{ __html: JSON.stringify(code) }}
   />
